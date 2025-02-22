@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site no GitHub Pages</title>
+    <title>Página com Imagem de Fundo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('sua-imagem.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.5); /* Adiciona um leve escurecimento */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo ao meu site!</h1>
-    <p>Este site está hospedado no GitHub Pages.</p>
+    <div class="container">
+        <h1>Bem-vindo à Minha Página</h1>
+        <p>Esta é uma página com uma imagem de fundo cobrindo toda a tela.</p>
+    </div>
 </body>
 </html>
