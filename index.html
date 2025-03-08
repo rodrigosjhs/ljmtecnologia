@@ -53,45 +53,83 @@
     </header>
     
     <main class="max-w-5xl mx-auto p-8">
-        <h2 class="text-3xl font-semibold text-center mb-10 text-gray-800">Serviços</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300 card transition-transform transform hover:scale-105">
-                <div class="flex items-center space-x-4">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
+        <!-- Seção de Introdução -->
+        <section id="intro" class="mb-16">
+            <h2 class="text-3xl font-semibold text-center mb-6 text-gray-800">Bem-vindo ao meu Portfólio</h2>
+            <p class="text-lg text-center text-gray-700">Sou especialista em Automação, Kubernetes, Infraestrutura como Código, e muito mais. Aqui estão alguns dos meus principais serviços para ajudar sua empresa a alcançar novos patamares de eficiência e escalabilidade.</p>
+        </section>
+        
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="mb-16">
+            <h2 class="text-3xl font-semibold text-center mb-10 text-gray-800">Serviços</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300 card transition-transform transform hover:scale-105">
+                    <div class="flex items-center space-x-4">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="card-title">CI/CD Pipelines</h3>
                     </div>
-                    <h3 class="card-title">CI/CD Pipelines</h3>
+                    <p class="mt-4 text-gray-700">Configuração e otimização de pipelines de integração e entrega contínua.</p>
                 </div>
-                <p class="mt-4 text-gray-700">Configuração e otimização de pipelines de integração e entrega contínua.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300 card transition-transform transform hover:scale-105">
-                <div class="flex items-center space-x-4">
-                    <div class="service-icon">
-                        <i class="fas fa-cluster"></i>
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300 card transition-transform transform hover:scale-105">
+                    <div class="flex items-center space-x-4">
+                        <div class="service-icon">
+                            <i class="fas fa-cluster"></i>
+                        </div>
+                        <h3 class="card-title">Kubernetes & Containers</h3>
                     </div>
-                    <h3 class="card-title">Kubernetes & Containers</h3>
+                    <p class="mt-4 text-gray-700">Gerenciamento e automação de clusters Kubernetes para alta disponibilidade.</p>
                 </div>
-                <p class="mt-4 text-gray-700">Gerenciamento e automação de clusters Kubernetes para alta disponibilidade.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300 card transition-transform transform hover:scale-105">
-                <div class="flex items-center space-x-4">
-                    <div class="service-icon">
-                        <i class="fas fa-code-branch"></i>
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300 card transition-transform transform hover:scale-105">
+                    <div class="flex items-center space-x-4">
+                        <div class="service-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="card-title">Infraestrutura como Código</h3>
                     </div>
-                    <h3 class="card-title">Infraestrutura como Código</h3>
+                    <p class="mt-4 text-gray-700">Provisionamento de infraestrutura com Terraform e Ansible.</p>
                 </div>
-                <p class="mt-4 text-gray-700">Provisionamento de infraestrutura com Terraform e Ansible.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300 card transition-transform transform hover:scale-105">
-                <div class="flex items-center space-x-4">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300 card transition-transform transform hover:scale-105">
+                    <div class="flex items-center space-x-4">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Monitoramento & Observabilidade</h3>
                     </div>
-                    <h3 class="card-title">Monitoramento & Observabilidade</h3>
+                    <p class="mt-4 text-gray-700">Implementação de Prometheus, Grafana e ELK Stack para logs e métricas.</p>
                 </div>
-                <p class="mt-4 text-gray-700">Implementação de Prometheus, Grafana e ELK Stack para logs e métricas.</p>
             </div>
-        </div>
+        </section>
+
+        <!-- Seção de Clientes -->
+        <section id="clientes" class="mb-16">
+            <h2 class="text-3xl font-semibold text-center mb-6 text-gray-800">Clientes</h2>
+            <p class="text-lg text-center text-gray-700 mb-8">Trabalhei com diversas empresas para otimizar sua infraestrutura e processos de DevOps. Aqui estão alguns dos meus clientes:</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="flex justify-center">
+                    <img src="client1-logo.png" alt="Cliente 1" class="w-32 h-32 object-contain">
+                </div>
+                <div class="flex justify-center">
+                    <img src="client2-logo.png" alt="Cliente 2" class="w-32 h-32 object-contain">
+                </div>
+                <div class="flex justify-center">
+                    <img src="client3-logo.png" alt="Cliente 3" class="w-32 h-32 object-contain">
+                </div>
+                <div class="flex justify-center">
+                    <img src="client4-logo.png" alt="Cliente 4" class="w-32 h-32 object-contain">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Orçamento -->
+        <section id="orcamento" class="mb-16">
+            <h2 class="text-3xl font-semibold text-center mb-6 text-gray-800">Solicite um Orçamento</h2>
+            <p class="text-lg text-center text-gray-700 mb-8">Entre em contato para saber mais sobre os valores e soluções que ofereço. Vamos discutir o que é melhor para sua empresa.</p>
+            <div class="text-center">
+                <a href="mailto:contato@devops.com" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-200">Solicitar Orçamento</a>
+            </div>
+        </section>
     </main>
     
     <footer class="text-center py-8 bg-gray-900 text-white shadow-lg mt-12">
