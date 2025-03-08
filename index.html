@@ -2,10 +2,14 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio DevOps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Portfólio DevOps - Automação, Kubernetes, Infraestrutura como Código</title>
+    <meta name="description" content="Portfólio de serviços DevOps, incluindo CI/CD Pipelines, Kubernetes, Infraestrutura como Código e Monitoramento.">
+    <meta name="keywords" content="DevOps, Kubernetes, Automação, Infraestrutura como Código, Monitoramento">
+    <meta name="author" content="Rodrigo">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" defer></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -18,6 +22,9 @@
         main {
             flex: 1;
         }
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -29,14 +36,19 @@
         .logo {
             max-width: 120px;
         }
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #2c5282;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <header class="flex justify-between items-center py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md">
-        <img src="logo.jpeg" alt="Logo da Empresa" class="logo ml-8">
+        <img src="logo.jpeg" alt="Logo da Empresa LJM Tecnologia" class="logo ml-8">
         <div class="text-center flex-1">
-            <h1 class="text-5xl font-extrabold mb-2">Portfólio DevOps</h1>
-            <p class="text-xl text-gray-200">Automação | Infraestrutura como Código | Observabilidade</p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-2">Portfólio DevOps</h1>
+            <p class="text-lg sm:text-xl text-gray-200">Automação | Infraestrutura como Código | Observabilidade</p>
         </div>
     </header>
     
@@ -48,7 +60,7 @@
                     <div class="service-icon">
                         <i class="fas fa-cogs"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-blue-600">CI/CD Pipelines</h3>
+                    <h3 class="card-title">CI/CD Pipelines</h3>
                 </div>
                 <p class="mt-4 text-gray-700">Configuração e otimização de pipelines de integração e entrega contínua.</p>
             </div>
@@ -57,7 +69,7 @@
                     <div class="service-icon">
                         <i class="fas fa-cluster"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-blue-600">Kubernetes & Containers</h3>
+                    <h3 class="card-title">Kubernetes & Containers</h3>
                 </div>
                 <p class="mt-4 text-gray-700">Gerenciamento e automação de clusters Kubernetes para alta disponibilidade.</p>
             </div>
@@ -66,7 +78,7 @@
                     <div class="service-icon">
                         <i class="fas fa-code-branch"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-blue-600">Infraestrutura como Código</h3>
+                    <h3 class="card-title">Infraestrutura como Código</h3>
                 </div>
                 <p class="mt-4 text-gray-700">Provisionamento de infraestrutura com Terraform e Ansible.</p>
             </div>
@@ -75,7 +87,7 @@
                     <div class="service-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-blue-600">Monitoramento & Observabilidade</h3>
+                    <h3 class="card-title">Monitoramento & Observabilidade</h3>
                 </div>
                 <p class="mt-4 text-gray-700">Implementação de Prometheus, Grafana e ELK Stack para logs e métricas.</p>
             </div>
@@ -84,9 +96,21 @@
     
     <footer class="text-center py-8 bg-gray-900 text-white shadow-lg mt-12">
         <h2 class="text-2xl font-semibold">Contato</h2>
-        <p class="mt-2">Email: <a href="mailto:contato@devops.com" class="underline">contato@devops.com</a> | LinkedIn: <a href="https://linkedin.com/in/devops" class="underline">linkedin.com/in/devops</a></p>
+        <p class="mt-2">Email: <a href="mailto:contato@devops.com" class="underline" aria-label="Enviar email para contato@devops.com">contato@devops.com</a></p>
+        <div class="flex justify-center mt-4 space-x-6">
+            <a href="https://www.instagram.com/seuperfil" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram text-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/seuperfil" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://www.facebook.com/seuperfil" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook text-2xl"></i>
+            </a>
+            <a href="https://twitter.com/seuperfil" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter text-2xl"></i>
+            </a>
+        </div>
     </footer>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
